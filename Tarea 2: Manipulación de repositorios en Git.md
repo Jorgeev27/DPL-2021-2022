@@ -21,7 +21,7 @@ Configurar el GIT con tu nombre, correo electrónico y activar el coloreado de s
     git config --global user.email "your-email-address"
     git config --global color.ui auto
     git config --list
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%202%20-%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git/Repositorio%20GIT%201.png)
 
   ### 2. CREAR REPOSITORIO
 Crea un repositorio nuevo con el nombre de DPL y mostrar el contenido de la misma:
@@ -31,7 +31,7 @@ Crea un repositorio nuevo con el nombre de DPL y mostrar el contenido de la mism
     git init
     ls -la
     
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%202%20-%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git/Repositorio%20GIT%202.png)
  
   ### 3. ESTADO DEL REPOSITORIO
   El siguiente paso es comprobar el estado del repositorio
@@ -46,7 +46,7 @@ Después de ello, creas un fichero llamado indice.txt con el siguiente contenido
 Comprobamos el estado del repositorio de nuevo, añadimos el fichero a una zona temporal y comprobamos el estado del repositorio.
 
   
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%202%20-%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git/Repositorio%20GIT%203.png)
 
   ### 5. COMMIT DE LOS CAMBIOS
 Ahora, realizas un commit de los cambios con el mensaje “Añadido índice de la asignatura DPL.” y ver el estado del repositorio.
@@ -54,7 +54,7 @@ Ahora, realizas un commit de los cambios con el mensaje “Añadido índice de l
     git commit -m "Añadido índice de la asignatura DPL."
     git status
   
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%202%20-%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git/Repositorio%20GIT%204.png)
 
   ### 6. MODIFICACIÓN FICHERO INDICE.TXT
 Con la modificación de ficheros, cambiamos el fichero indice.txt añadiendo los capítulos 3 y 4:
@@ -77,7 +77,7 @@ Mostramos los cambios con respecto a la última versión del repositorio y hacem
     git commit -m "Añadido los capitulos 3"
 
   
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%202%20-%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git/Repositorio%20GIT%205.png)
 
   ### 7. HISTORIAL
   Para ver el historial, mostramos los cambios de la última versión del repositorio; cambiando el mensaje del último commit por “Añadido el capítulo sobre gestión de ramas de índice”. Después de eso, volvemos a mostrar los últimos cambios del repositorio:
@@ -86,5 +86,5 @@ Mostramos los cambios con respecto a la última versión del repositorio y hacem
     git commit --amend -m "Añadido el capitulo sobre gestión de ramas al índice."
     git show
   
-  ![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+  ![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%202%20-%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git/Repositorio%20GIT%206.png)
 
