@@ -23,8 +23,8 @@ Y si viene instalado te aparece la versión correspondiente. En mi caso, al tene
 
 	sudo apt install git
 
-![](https://github.com/Jorgeev27/sadas/blob/main/DPL/IMG/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%201.png)
-![](https://github.com/Jorgeev27/sadas/blob/main/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%202.png)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%201.png)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%202.png)
   
   ### 2. ACTUALIZAR LOS PAQUETES
   
@@ -34,7 +34,7 @@ Una vez instalado GIT, se debe actualizar los paquetes de estos, para ello utili
 
 	sudo apt install libz-dev libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext cmake gcc
 
-![](https://github.com/Jorgeev27/sadas/blob/main/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%203.png)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%203.png)
 
  ### 3. DIRECTORIO TEMPORAL
  
@@ -54,7 +54,7 @@ En mi caso, al no tener curl instalado, lo tuve que instalar con el comando:
 
 Y ya al instalar curl, procedí a instalar la versión más reciente.
 
-![](https://github.com/Jorgeev27/sadas/blob/main/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%204.png)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%204.png)
    
  ### 4. DESCOMPRIMIR EL ARCHIVO TARBALL
  
@@ -62,7 +62,7 @@ Y ya al instalar curl, procedí a instalar la versión más reciente.
 
 	tar -zxf git.tar.gz
 
-![](https://github.com/Jorgeev27/sadas/blob/main/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%205.png)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%205.png)
 
  ### 5. DIRECTORIO DE GIT
  
@@ -76,8 +76,8 @@ Y crear el paquete e instalarlo con estos 2 comandos:
 
 	sudo make prefix=/usr/local install
 
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%206.png)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%207.png)
 
  ### 6. SUSTITUCIÓN SHELL
  
@@ -91,7 +91,7 @@ Y una vez completado todo este proceso, lo siguiente y último, es comprobar la 
 
 Si GIT está instalado y funcionando correctamente, ahora se procede a su configuración.
 
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%208.png)
  
  ## CONFIGURACION DE GIT
  ### 7. CONFIGURACIÓN PARA REALIZAR LA INSTALACIÓN (PASO 1)
@@ -110,7 +110,7 @@ Y para ver todos los elementos de la configuración con:
 
 	git config --list
  
- ![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+ ![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%209.png)
  
  ### 9. ARCHIVO CONFIGURACIÓN GIT
  
@@ -120,5 +120,5 @@ Esta información se almacena en el archivo de configuración de GIT. Hay que ed
 
 Hay más opciones para poder configurar, pero estas 2 son las opciones más comunes.
 
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
-![](https://github.com/Jorgeev27/sadas/blob/765a0e440006ce373ad3f96b63a8c681b4ca0f87/Sin%20t%C3%ADtulo.jpg)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%2010.png)
+![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%2011.png)
