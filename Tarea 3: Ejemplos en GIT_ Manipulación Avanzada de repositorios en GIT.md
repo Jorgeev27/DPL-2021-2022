@@ -18,7 +18,7 @@
     git clone https://github.com/jpexposito/libro.git
     cd libro
  
- ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20 %20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%201.png)
+ ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%201.png)
  
  ### 1. HISTORIAL DE CAMBIOS DEL REPOSITORIO Y FICHERO CAPÍTULO 1
 
