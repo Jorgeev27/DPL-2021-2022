@@ -18,7 +18,7 @@
     git clone https://github.com/jpexposito/libro.git
     cd libro
  
- ![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%201.png)
+ ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20 %20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%201.png)
  
  ### 1. HISTORIAL DE CAMBIOS DEL REPOSITORIO Y FICHERO CAPÍTULO 1
 
@@ -41,7 +41,7 @@ Estos son los comandos que hay que utilizar para ello:
 
     git log
     
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%202.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%202.png)
   
   ### 2. FICHERO CAPÍTULO 2
   
@@ -64,7 +64,7 @@ Estos son los comandos que hay que utilizar para ello:
     git diff HEAD~2..HEAD
 
 
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%203.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%203.png)
 
  ### 3. FICHERO CAPÍTULO 3
  
@@ -85,7 +85,7 @@ Estos son los comandos que hay que utilizar para ello:
 
     git diff <codigo hash de la primera version>..HEAD
 
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%204.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%204.png)
    
  ### 4. FICHERO ÍNDICE
  
@@ -111,7 +111,7 @@ Estos son los comandos que hay que utilizar para ello:
     git annotate indice.txt
 
 
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%205.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%205.png)
 
  ### 5. RAMA BIBLIOGRAFÍA
  
@@ -121,7 +121,7 @@ Creamos una nueva rama llamada bibliografía y mostramos las ramas del repositor
 
     git branch -av
     
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%207.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%206.png)
 
  ### 6. FICHERO CAPÍTULO 4
  
@@ -140,7 +140,7 @@ Estos son los comandos que hay que utilizar para ello:
 
     git log --graph --all --oneline
 
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%208.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%207.png)
 
  ### 7. FICHERO BIBLIOGRAFÍA
  
@@ -161,7 +161,7 @@ Estos son los comandos que hay que utilizar para ello:
 
     git log --graph --all --oneline
 
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%208.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%208.png)
  
  ### 8. FUSIÓN RAMA BIBLIOGRÁFICA CON RAMA MAIN
  
@@ -179,7 +179,10 @@ Estos son los comandos que hay que utilizar para ello:
 
     git log --graph --all --oneline
  
- ![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%209.png)
+ ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%209.png)
+ ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2010.png)
+ ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2011.png)
+ ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2012.png)
  
  ### 9. RAMA BIBLIOGRÁFICA, FICHERO BIBLIOGRAFÍA, RAMA MAIN
  
@@ -226,9 +229,14 @@ Todos estos procesos se hacen a través de los siguientes comandos:
 
 Hay más opciones para poder configurar, pero estas 2 son las opciones más comunes.
 
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%2010.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2013.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2014.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2015.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2016.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2017.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2018.png)
 
 
 Aquí me daba un error porque, al parecer, no me cogía el comando “nano” de GIT. Entonces, ese paso del comando (git nano bibliografia), me lo tuve que saltar tras varios intentos y alguna búsqueda en internet pero sin acierto.
-![](https://github.com/Jorgeev27/DPL/blob/main/img/Tarea%201%20-%20Instalaci%C3%B3n%20de%20Git%20en%20linux/Git%2011.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2019.png)
 
