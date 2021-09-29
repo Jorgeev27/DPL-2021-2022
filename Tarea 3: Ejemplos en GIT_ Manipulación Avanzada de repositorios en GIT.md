@@ -3,15 +3,15 @@
   ## Jorge Escobar Viñuales
   
   ## Indice:
- - Instalando GIT
- - Actualizar los paquetes
- - Directorio temporal
- - Descomprimir el archivo tarball
- - Directorio de GIT
- - Sustitución shell
- - Configuración para realizar la instalación (paso 1)
- - GIT config
- - Archivo de configuración GIT
+ - Historial de cambios del repositorio y fichero capítulo 1
+ - Fichero capítulo 2
+ - Fichero capítulo 3
+ - Fichero índice
+ - Rama bibliografía
+ - Fichero capítulo 4
+ - Fichero bibliografía
+ - Fusión rama bibliográfica con rama main
+ - Rama bibliográfica, fichero bibliografía, rama main
  
  Para poder realizar los ejemplos, se debe haber hecho anteriormente los ejercicios del historial de cambios o hacer un clon del repositorio remoto https://github.com/jpexposito/libro a través de los siguientes comandos:
  
