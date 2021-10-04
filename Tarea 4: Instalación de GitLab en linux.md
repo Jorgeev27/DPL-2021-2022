@@ -33,7 +33,7 @@ Para ello, utilizaremos este comando:
 
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%203.png)
- ### 3. INTALACIÓN DE GITLAB
+ ### 3. INSTALACIÓN DE GITLAB
 
 El equipo de GitLab nos proporciona un script de shell para configurar el repositorio APT en su sistema, así como para instalar algunas dependencias necesarias.
 
