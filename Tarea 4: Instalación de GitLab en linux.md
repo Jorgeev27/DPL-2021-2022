@@ -20,7 +20,8 @@ Para ello, utilizaremos estos dos comandos:
 
     sudo apt upgrade
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%202.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%201.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%202.png)
 
   ### 2. INSTALACIÓN DE PAQUETES ADICIONALES
 
@@ -31,8 +32,7 @@ Para ello, utilizaremos este comando:
     sudo apt install -y vim curl ca-certificates apt-transport-https
 
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%203.png)
-
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%203.png)
  ### 3. INTALACIÓN DE GITLAB
 
 El equipo de GitLab nos proporciona un script de shell para configurar el repositorio APT en su sistema, así como para instalar algunas dependencias necesarias.
@@ -48,13 +48,21 @@ Para terminar con la instalación, se debe de ejecutar el siguiente comando para
     sudo gitlab-ctl reconfigure
 
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%204.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%204.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%205.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%206.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%207.png)
+
 
  ### 4. ACCESO
 
 Una vez hecho la instalación, se procederá a acceder a través de un navegador; poniendo localhost o la dirección ip de nuestro ordenador para acceder al servidor
 
     localhost
+    
+Tuve que configurar root por comandos porque hay veces que daba fallos, con el comando:
 
-
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%203%20-%20Ejemplos%20en%20GIT%20Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20Git/Manipulaci%C3%B3n%20GIT%2019.png)
+    sudo github-rails console
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%208.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%204%20-%20Instalaci%C3%B3n%20de%20Gitlab%20en%20Linux/Gitlab%209.png)
