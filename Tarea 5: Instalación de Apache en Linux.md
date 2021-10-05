@@ -104,7 +104,7 @@ Y la verificación de Apache funcionando:
 
     sudo systemctl status apache2
 
-Con su correspondiente resultado:
+    Con su correspondiente resultado:
     ● apache2.service - The Apache HTTP Server
     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
     Active: active (running) since Tue 2021-10-05 16:11:23 WEST; 3min 2s ago
