@@ -81,7 +81,7 @@ Ahora, usaremos el perfil Apache que no será necesario usar la conexión cifrad
 
     sudo ufw allow 'Apache'
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%209.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2010.png)
 
 Verificando los perfiles activos y, además, verificando si Apache se está ejecutando correctamente, con los siguientes comandos:
 
@@ -117,8 +117,7 @@ Y la verificación de Apache funcionando:
             ├─3100 /usr/sbin/apache2 -k start
             ├─3101 /usr/sbin/apache2 -k start
             └─3102 /usr/sbin/apache2 -k start
-
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2010.png)
+            
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2011.png)
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2012.png)
 
