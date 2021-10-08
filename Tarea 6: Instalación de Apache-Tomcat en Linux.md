@@ -11,7 +11,7 @@
 
  ### 1. ACTUALIZACIÓN DE LOS REPOSITORIOS
 
-Antes de comenzar cualquier instalación de cualquier programa, se recomienda actualizar el repositorio del sistema operativo. De este modo, la instalación de Apache-Tomcat en cualquier Ubuntu es siempre segura y actualizada
+Antes de comenzar cualquier instalación de cualquier programa, se recomienda actualizar el repositorio del sistema operativo. De este modo, la instalación de Apache-Tomcat en cualquier Ubuntu es siempre segura y actualizada.
 
 Para ello, utilizaremos estos dos comandos:
 
@@ -24,13 +24,13 @@ Para ello, utilizaremos estos dos comandos:
 
   ### 2. INSTALACIÓN DE APACHE-TOMCAT
 
-Vamos a descargar Tomcat10 a través de la página oficial o ejecutar el siguiente comando y se descarga:
+Vamos a descargar Tomcat 10 a través de la página oficial o ejecutar el siguiente comando y se descarga:
 
     wget https://downloads.apache.org/tomcat/tomcat-10/v10.0.12/bin/apache-tomcat-10.0.12.tar.gz
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%203.png)
 
-Vamos a instalar Tomcat10, primeramente creamos un usuario tomcat:
+Vamos a instalar Tomcat 10, primeramente creamos un usuario tomcat:
 
     sudo useradd -U -m -d /opt/tomcat -k /dev/null -s /bin/false tomcat
 
@@ -42,19 +42,19 @@ Descomprimimos el paquete en su ubicación definitiva:
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%205.png)
 
-Asignamos como propietario de los archivos de Tomcat10 el usuario tomcat que creamos:
+Asignamos como propietario de los archivos de Tomcat 10 el usuario tomcat que creamos:
 
     sudo chown -R tomcat: /opt/tomcat/
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%206.png)
 
-Renombramos el directorio de instalación. Como el directorio de Tomcat10 tiene los números de la versión, se crea un enlace simbólico sin números:
+Renombramos el directorio de instalación. Como el directorio de Tomcat 10 tiene los números de la versión, se crea un enlace simbólico sin números:
 
     sudo ln -s /opt/tomcat/apache-tomcat-10.0.12/ /opt/tomcat/apache-tomcat
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%207.png)
 
-Configuramos e iniciamos el servicio de Tomcat10. Para ello, creamos un archivo de unidad para Systemd:
+Configuramos e iniciamos el servicio de Tomcat 10. Para ello, creamos un archivo de unidad para Systemd:
 
     sudo nano /etc/systemd/system/tomcat10.service
 
@@ -79,21 +79,21 @@ Y el contenido es el siguiente:
     [Install]
     WantedBy=multi-user.target
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%291.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%209.png)
 
-Guardamos el archivo e iniciamos el servicio de Tomcat10:
+Guardamos el archivo e iniciamos el servicio de Tomcat 10:
 
     sudo systemctl start tomcat10
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%2010.png)
 
-Verificamos el estado del servicio de Tomcat10 para ver si está funcionando:
+Verificamos el estado del servicio de Tomcat 10 para ver si está funcionando:
 
     systemctl status tomcat10
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%2011.png)
 
-Si se quiere iniciar automáticamente Tomcat10, habilitamos el servicio:
+Si se quiere iniciar automáticamente Tomcat 10, habilitamos el servicio:
 
     sudo systemctl enable tomcat10
 
@@ -101,7 +101,7 @@ Si se quiere iniciar automáticamente Tomcat10, habilitamos el servicio:
 
 ### 3. ACCESO A APACHE-TOMCAT
 
-Por defecto, Tomcat10 se inicia en el puerto de conexión 8080, pero anteriormente instalamos GitLab; entonces tendremos problemas a la hora de acceder a Apache-Tomcat. Para ello, configuraremos el archivo server.xml que está en la carpeta de apache-tomcat, conf y encontraremos ahí el archivo server.xml:
+Por defecto, Tomcat 10 se inicia en el puerto de conexión 8080, pero anteriormente instalamos GitLab; entonces tendremos problemas a la hora de acceder a Apache-Tomcat. Para ello, configuraremos el archivo server.xml que está en la carpeta de apache-tomcat, conf y encontraremos ahí el archivo server.xml:
 
     cd /apache-tomcat-10.0.12/conf/
 
