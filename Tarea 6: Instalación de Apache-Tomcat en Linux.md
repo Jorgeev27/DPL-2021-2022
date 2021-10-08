@@ -5,7 +5,7 @@
   ## Indice:
  - Actualización de los repositorios
  - Instalación de Apache-Tomcat
- - Acceso
+ - Acceso a Apache-Tomcat
 
  Para poder realizar la actividad, se necesitará una máquina Linux.
 
