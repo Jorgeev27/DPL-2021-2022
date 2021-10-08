@@ -99,7 +99,7 @@ Si se quiere iniciar automáticamente Tomcat10, habilitamos el servicio:
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%2012.png)
 
-    ### 3. ACCESO A APACHE-TOMCAT
+### 3. ACCESO A APACHE-TOMCAT
 
 Por defecto, Tomcat10 se inicia en el puerto de conexión 8080, pero anteriormente instalamos GitLab; entonces tendremos problemas a la hora de acceder a Apache-Tomcat. Para ello, configuraremos el archivo server.xml que está en la carpeta de apache-tomcat, conf y encontraremos ahí el archivo server.xml:
 
