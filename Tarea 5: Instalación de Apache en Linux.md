@@ -12,7 +12,7 @@
 
  ### 1. ACTUALIZACIÓN DE LOS REPOSITORIOS
 
-Antes de comenzar cualquier instalación de cualquier programa, se recomienda actualizar el repositorio del sistema operativo. De este modo, la intalación de GitLab en cualquier Ubuntu es siempre segura y actualizada
+Antes de comenzar cualquier instalación de cualquier programa, se recomienda actualizar el repositorio del sistema operativo. De este modo, la intalación de Apache en cualquier Ubuntu es siempre segura y actualizada
 
 Para ello, utilizaremos estos dos comandos:
 
@@ -81,7 +81,7 @@ Ahora, usaremos el perfil Apache que no será necesario usar la conexión cifrad
 
     sudo ufw allow 'Apache'
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%209.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2010.png)
 
 Verificando los perfiles activos y, además, verificando si Apache se está ejecutando correctamente, con los siguientes comandos:
 
@@ -105,6 +105,7 @@ Y la verificación de Apache funcionando:
     sudo systemctl status apache2
 
 Con su correspondiente resultado:
+    
     ● apache2.service - The Apache HTTP Server
     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
     Active: active (running) since Tue 2021-10-05 16:11:23 WEST; 3min 2s ago
@@ -117,8 +118,7 @@ Con su correspondiente resultado:
             ├─3100 /usr/sbin/apache2 -k start
             ├─3101 /usr/sbin/apache2 -k start
             └─3102 /usr/sbin/apache2 -k start
-
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2010.png)
+            
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2011.png)
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%205%20-%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux/Apache%2012.png)
 
