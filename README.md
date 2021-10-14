@@ -7,4 +7,8 @@ Desarrollo de Aplicaciones Web - DAW
   
 ## Tareas:
 - Tarea 1: Instalación de GIT en local
-- Tarea 2: Manipulación de repositorios en Git
+- Tarea 2: Manipulación de repositorios en GIT
+- Tarea 3: Ejemplos en GIT_Manipulación Avanzada de repositorios en GIT
+- Tarea 4: Instalación de GitLab en linux
+- Tarea 5: Instalación de Apache en Linux
+- Tarea 6: Instalación de Apache-Tomcat en Linux
