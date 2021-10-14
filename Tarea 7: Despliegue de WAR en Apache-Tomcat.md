@@ -62,6 +62,8 @@ En el fichero web.xml, sustituimos:
 por:
 
     <display-name>app-web-aron</display-name>
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%206%20-%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux/Apache%20Tomcat%201.png)
 
 Siendo así, aron el nombre del alumno (también, para distinguirlo con más precisión, poniendo el nombre y apellidos del alumno).
 
