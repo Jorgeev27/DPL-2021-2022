@@ -76,3 +76,5 @@ Dentro de la carpeta target, se debe encontrar un fichero de nombre app-web-demo
 No obstante, se puede hacer uso de maven para construcción de la aplicación web. Para ello, se utiliza el siguiente comando. Tras la ejecución del comando, cuando se descargan las librerías por primera vez, se tiene una aplicación web completa en JAVA, lo que conocemos todos como el primer programa de “Hola Mundo!!”:
 
     mvn archetype:generate -DgroupId=es.iespuerto.alumno -DartifactId=
+
+Me está dando error en el ManagerApp, ya que puse el usuario tomcat y la contraseña s3cret y me salta el error 403. Se lo puse en un mensaje por privado por si me podía ayudar en ello.
