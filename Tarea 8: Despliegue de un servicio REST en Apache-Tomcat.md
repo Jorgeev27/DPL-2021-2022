@@ -41,3 +41,15 @@ Los requisitos que necesitamos para crear el servicio RESTful, debemos tener ins
   Para solventar el problema, debemos incluir las librerías en el WAR, dentro de la carpeta lib de Tomcat o dentro de la carpeta WEB-INFO/lib del propio proyecto.
 
   Se pueden hacer mejoras en el servicio, como por ejemplo una implementación de un nuevo método que permita realizar la búsqueda por el campo ahí, el cual hay que añadir en la clase User. Además, se debe implementar el método getUserByDni.
+
+
+MVN Clean Install y me salen las dependencias del archivo.
+
+
+
+Añadí dependencias pero que no han tenido éxito
+
+
+
+
+Solamente, tengo estas capturas porque se me olvidó hacer capturas de lo que hice y demás. Además, con el consentimiento de BUSCAR EN INTERNET los famosos errores que nos ha dado pero, sin éxito.
