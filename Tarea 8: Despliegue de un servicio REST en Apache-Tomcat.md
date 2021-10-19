@@ -33,9 +33,9 @@ Los requisitos que necesitamos para crear el servicio RESTful, debemos tener ins
   Si se producen problemas durante el despliegue del servicio, podemos verificar el problema en los ficheros que se encuentrar alojado en la carpeta logs de Tomcat. Los ficheros se pueden prestar atención son:
 
   catalina_fecha
-  localhost_fecha.Aquí, se mostrarán los problemas de acceso, dependencias de librerías, etc., como en el ejemplo siguiente:
+  localhost_fecha. Aquí, se mostrarán los problemas de acceso, dependencias de librerías, etc., como en el ejemplo siguiente:
 
-  SEVERE [http-nio-8082-exec-6] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [Jersey Web Application] in web application [/rest-service] threw load() exception
+    SEVERE [http-nio-8082-exec-6] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [Jersey Web Application] in web application [/rest-service] threw load() exception
         java.lang.ClassNotFoundException: com.sun.jersey.spi.container.servlet.ServletContainer
 
   Para solventar el problema, debemos incluir las librerías en el WAR, dentro de la carpeta lib de Tomcat o dentro de la carpeta WEB-INFO/lib del propio proyecto.
