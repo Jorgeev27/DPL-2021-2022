@@ -15,10 +15,10 @@
 
  Una API REST se aprovecha los métodos HTTP descritos en el protocolo RFC 2616. Se utiliza las solicitudes:
 
-  GET: buscar datos
-  PUT: alterar el estado de los datos (como objeto, archivo, bloque),
-  POST: crear datos.
-  DELETE: métodos para eliminar. Se ven diferentes códigos de estado HTTP utilizados por las API REST.
+  - GET: buscar datos
+  - PUT: alterar el estado de los datos (como objeto, archivo, bloque),
+  - POST: crear datos.
+  - DELETE: métodos para eliminar. Se ven diferentes códigos de estado HTTP utilizados por las API REST.
 
   ### 2. CREANDO NUESTRO SERVICIO RESTFUL API
 
