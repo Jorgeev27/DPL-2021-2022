@@ -62,17 +62,28 @@ En el fichero web.xml, sustituimos:
 por:
 
     <display-name>app-web-aron</display-name>
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%207%20-%20Despliegue%20de%20WAR%20en%20Apache-Tomcat/WAR%201.png)
 
 Siendo así, aron el nombre del alumno (también, para distinguirlo con más precisión, poniendo el nombre y apellidos del alumno).
 
 En el fichero index.jsp, se realizará la sustitución del valor alumno siguiendo el mismo patrón que el paso anterior.
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%207%20-%20Despliegue%20de%20WAR%20en%20Apache-Tomcat/WAR%202.png)
+
 Una vez realizado los 2 pasos anteriores, lanzamos el fichero con el comando:
 
     mvn clean install
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%207%20-%20Despliegue%20de%20WAR%20en%20Apache-Tomcat/WAR%203.png)
 
 Dentro de la carpeta target, se debe encontrar un fichero de nombre app-web-demo.war. Este nombre se especifica dentro del fichero pom.xml.
 
 No obstante, se puede hacer uso de maven para construcción de la aplicación web. Para ello, se utiliza el siguiente comando. Tras la ejecución del comando, cuando se descargan las librerías por primera vez, se tiene una aplicación web completa en JAVA, lo que conocemos todos como el primer programa de “Hola Mundo!!”:
 
     mvn archetype:generate -DgroupId=es.iespuerto.alumno -DartifactId=
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%207%20-%20Despliegue%20de%20WAR%20en%20Apache-Tomcat/WAR%204.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%207%20-%20Despliegue%20de%20WAR%20en%20Apache-Tomcat/WAR%205.png)
+
+Me está dando error en el ManagerApp, ya que puse el usuario tomcat y la contraseña s3cret y me salta el error 403. Se lo puse en un mensaje por privado por si me podía ayudar en ello.
