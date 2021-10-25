@@ -10,7 +10,7 @@
 
 Se necesita una máquina virtual Ubuntu, con la instalación previamente realizada de JAVA y MAVEN. Además de esto, la instalación JBoss-Wildfly y desplegado el servidor de aplicaciones de este último.
 
-  ### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+  ### 2. PASOS PARA REALIZAR LOS SERVICIOS RS/WS EN JBOSS-WILDFLY
 
 INSTALACIÓN DEL SERVICIO HELLO-RS:
 
