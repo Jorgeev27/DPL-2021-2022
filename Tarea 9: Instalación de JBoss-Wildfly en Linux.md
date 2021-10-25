@@ -18,6 +18,9 @@ Para ello, utilizaremos estos dos comandos:
     sudo apt update
 
     sudo apt upgrade
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%201.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%202.png)
 
   ### 2. INSTALACIÓN DE JBOSS-WILDFLY
 
@@ -25,27 +28,34 @@ Vamos a descargar JBoss-Wildfly a través de la página oficial o ejecutar el si
 
     wget https://github.com/wildfly/wildfly/releases/download/25.0.0.Final/wildfly-25.0.0.Final.zip
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%203.png)
 
 Vamos a instalar JBoss-Wildfly, primeramente creamos un usuario wildfly:
 
     sudo groupadd -r wildfly
     sudo useradd -r -g wildfly -d /opt/wildfly -s /sbin/nologin wildfly
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%204.png)
 
 Descomprimimos el paquete en su ubicación definitiva:
 
     sudo tar xf /tmp/wildfly-25.0.0.Final.zip -C /opt/
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%205.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%206.png)
 
 Creamos un enlace simbólico al directorio:
 
     sudo ln -s /opt/wildfly-25.0.0.Final.zip /opt/wildfly
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%207.png)
 
 Damos acceso al usuario y grupo wildfly:
 
-    sudo chown -RH wildfly: /opt/wildfly
+    sudo chown -R wildfly: /opt/wildfly
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%208.png)
 
 Configuramos e iniciamos el servicio de JBoss-Wildfly.:
 
@@ -65,26 +75,53 @@ Configuramos e iniciamos el servicio de JBoss-Wildfly.:
 
     sudo systemctl daemon-reload
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%209.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2010.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2011.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2012.png)
 
 Iniciamos el servicio. Una vez guardado el archivo, se puede iniciar el servicio con el siguiente comando:
 
     sudo systemctl start wildfly
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2013.png)
 
 Verificamos el estado del servicio de JBoss-Wildfly para ver si está funcionando:
 
     sudo systemctl status wildfly
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2014.png)
 
 Inicio automático del servicio de wildfly. Si queremos que arranque automáticamente en cada encendido de la máquina virtual, tendremos que habilitar el servicio:
 
     sudo systemctl enable wildfly
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2015.png)
 
-Vamos a permitir el tráfico del puerto específico, por ejemplo el puerto 8084:
+Vamos a permitir el tráfico del puerto. Hemos modificado el puerto 8080 por 8084, para ello se modifica la etiqueta del comando:
 
-    sudo ufw allow 8084/tcp
+    sudo nano /opt/wildfly/standalone/configuration/standalone.xml
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2016.png)
 
+Una vez dentro buscamos:
+
+    <socket-binding name="http" port="${jboss.http.port:8080}"/>
+
+por:
+
+    <socket-binding name="http" port="${jboss.http.port:8084}"/>
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2017.png)
+
+Y permitimos el tráfico con el puerto:
+
+    sudo ufw allow 8083/tcp
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2018.png)
+
+(Aquí me equivoqué y puse 8083 pero de todas maneras, me funciona igualmente).
 
   ### 3. DESPLIEGUE DEL SERVICIO
 
@@ -121,17 +158,23 @@ Seleccionamos la opción A, indicando el usuario de gestión. Y obtendremos el s
     value="UGFzc3dvcmQxMjM="
     ... />
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2019.png)
+
 Debes de configurarlo según tus necesidades
 
 
 Para gestionar la consola de forma remota, hay que realizar la siguiente configuración con el siguiente comando:
 
     sudo nano /etc/wildfly/wildfly.conf
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2020.png)
 
     WILDFLY_CONSOLE_BIND=0.0.0.0
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2021.png)
+
     sudo nano /opt/wildfly/bin/launch.sh
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2022.png)
 
 lanzando así lo siguiente:
 
@@ -140,6 +183,8 @@ lanzando así lo siguiente:
     else
 
     $WILDFLY_HOME/bin/standalone.sh -c $2 -b $3 -bmanagement $4
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2023.png)
 
 La ejecución indica el modo en el que vamos a lanzar el servidor(standalone o damain).
 
@@ -155,8 +200,12 @@ Para finalizar, debemos realizar:
 
     sudo systemctl restart wildfly
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2024.png)
 
-Y abrimos la consola de cli:
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2025.png)
 
-    cd /opt/wildfly/bin/
-    ./jboss-cli.sh --connect
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2026.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2027.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%209%20-%20Instalaci%C3%B3n%20de%20JBoss-Wildfly%20en%20Linux/JBoss%20Wildfly%2028.png)
