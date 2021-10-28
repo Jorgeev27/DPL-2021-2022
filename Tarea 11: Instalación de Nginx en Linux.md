@@ -194,13 +194,19 @@ Entonces, vamos a crear un directorio para your_domain, usando -p para crear cua
 
     sudo mkdir -p /var/www/your_domain/html
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2019.png)
+
 A continuación, asignamos la propiedad del directorio con la variable de entorno $USER con el comando:
 
     sudo chown -R $USER:$USER /var/www/your_domain/html
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2020.png)
+
 Los permisos del root deberían ser correctos si no se modifica el valor umask, que establece los permisos de archivos predeterminados. Para asegurarse de que los permisos sean correctos y permitir al propietario leer, escribir y ejecutar los archivos, y a la vez conceder sólo los permisos de lectura y ejecución a los grupos y terceros, pueden ingresar con el siguiente comando:
 
     sudo chmod -R 755 /var/www/your_domain
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2021.png)
 
 A continuación, crea una página de ejemplo index.html utilizando nano:
 
@@ -217,6 +223,10 @@ Dentro del html, agregamos el siguiente código html:
             </h1>
         </body>
     </html>
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2022.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2023.png)
 
 Para que Nginx presente el contenido, es necesario crear un bloque de servidor con las directivas correctas. En vez de modificar el archivo de configuración predeterminado directamente, se crea un nuevo en /etc/nginx/sites-available/your_domain:
 
@@ -237,12 +247,17 @@ Y pegarlo en el siguiente bloque de configuración, similar al predeterminado, p
                   try_files $uri $uri/ =404;
             }
           }
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2024.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2025.png)
 
 Hay que realizar este procedimiento sobre un puerto que tengamos disponible, en mi caso, el puerto 8086.
 
 A continuación, habilitaremos el archivo creando un enlace entre éste y el dominio sites-enabled, en el cual Nginx obtiene las lecturas durante el inicio:
 
     sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2026.png)
+
 
 Ahora contamos con los dos bloques de servidor habilitados y configurados para responder las solicitudes conforme a las directivas listen y server_name:
 
@@ -266,6 +281,11 @@ Y buscamos server_names_hash_bucket_size:
         ...
       }
     …
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2027.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2028.png)
+
 
 Guardamos el archivo y lo cerramos.
 
