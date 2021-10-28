@@ -146,7 +146,7 @@ Para volver a habilitar el servicio de modo que se cargue en el inicio, escribim
 
 Ya hemos aprendido los comandos de administración básicos y debería estar listo para configurar el sitio para alojar más de un dominio.
 
-### 3. CREANDO NUESTRO SERVICIO RESTFUL API
+### 2. CONFIGURAR LOS BLOQUES DEL SERVIDOR (RECOMENDADO)
 
 Al emplear el servidor web Nginx, se pueden utilizar bloques del servidor (similares a hosts virtuales de Apache) para encapsular los detalles de la configuración y alojar más de un dominio desde un único servidor. Configuraremos un dominio llamado your_domain (siendo your_domain el nombre de tu dominio o el que queramos).
 
@@ -241,7 +241,7 @@ Y si no hay problemas, reiniciamos Nginx para habilitar los cambios. Con el coma
 
 Con esto realizado, debería proporcionar el nombre de dominio. Podemos probarlo visitando ahttp://your_domain
 
-### 2. FAMILIARIZACIÓN CON LOS ARCHIVOS Y DIRECTIVOS IMPORTANTES DE NGINX
+### 6. FAMILIARIZACIÓN CON LOS ARCHIVOS Y DIRECTIVOS IMPORTANTES DE NGINX
 
 /var/www/html: Contenido web real, que por defecto solo consta de la página predeterminada de Nginx.
 
