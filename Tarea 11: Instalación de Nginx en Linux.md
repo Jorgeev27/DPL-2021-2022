@@ -22,10 +22,14 @@ Como Nginx debe de estar disponible en los repositorios predeterminados de Ubunt
 Utilizaremos el siguiente comando para tener el listado de los paquetes más recientes:
 
     sudo apt update
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%201.png)
 
 Ahora con esto listo, podemos instalar Nginx, con el siguiente comando:
 
     sudo apt install nginx
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%202.png)
 
 Tras haber aceptado todo el procedimiento, se instalará Nginx y cualquier dependencia necesaria en nuestra máquina virtual.
 
@@ -46,6 +50,8 @@ Y nos debería obtener un listado de los perfiles de la aplicación con el coman
       Nginx HTTPS
       OpenSSH
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%203.png)
+
 Y hay 3 perfiles para Nginx:
 
 Nginx Full: Este perfil abre el puerto 80 (tráfico web normal, no cifrado), y el puerto 443 (puerto TLS/SSL cifrado.
@@ -59,6 +65,9 @@ Se recomienda habilitar el perfil del puerto más restrictivo. En este momento, 
 Se puede habilitar con el comando:
 
     sudo ufw allow 'Nginx HTTP'
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%204.png)
+
 
 Se puede verificar el cambio con el comando:
 
@@ -74,6 +83,9 @@ Y el resultado indicará el tráfico de HTTP que se permite:
             Nginx HTTP                     ALLOW               Anywhere                  
             OpenSSH (v6)                   ALLOW               Anywhere (v6)             
             Nginx HTTP (v6)                ALLOW               Anywhere (v6)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%205.png)
+
 
 ### 3. COMPROBACIÓN DEL SERVIDOR WEB
 
@@ -96,6 +108,14 @@ Con la siguiente salida:
                 ├─2369 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
                 └─2380 nginx: worker process
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%206.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%207.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%208.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%209.png)
+
 Como nos confirma esto, el servicio se inició correctamente. Sin embargo, la mejor forma de comprobarlo es solicitando una página de Nginx.
 
 En el caso de no salir activo, debe existir un problema de puertos, concretamente el puerto 80 debe de estar ocupado por otro servicio.
@@ -107,10 +127,16 @@ Puede acceder a la página de aterrizaje predeterminada de Nginx para confirmar 
 Para ello, ejecutamos el siguiente comando:
 
     curl -4 icanhazip.com
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2010.png)
 
 Cuando se tengo la dirección IP del servidor, introdúcela en la barra de direcciones del navegador:
 
     http://your_server_ip:puerto
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2011.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2012.png)
 
 Y debería de mostrarse que se ejecute correctamente Nginx.
 
@@ -123,26 +149,38 @@ Ahora que el servidor está listo, revisamos algunos de los comandos básicos de
 Para detener el servidor web, escribimos el comando:
 
     sudo systemctl stop nginx
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2013.png)
+
 
 Para iniciar el servidor web cuando no esté activo, escribimos el comando:
 
     sudo systemctl start nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2014.png)
+
 Para detener y luego iniciar de nuevo servicio, escribimos el comando:
 
     sudo systemctl restart nginx
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2015.png)
+
 
 Si solo está realizando los cambios en la configuración, Nginx a menudo puede volver a cargarse sin perder las conexiones. Escribimos el comando:
 
     sudo systemctl reload nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2016.png)
+
 De forma predeterminada, Nginx está configurado para iniciarse automáticamente cuando lo haga el servidor. Si no es lo que quiere, deshabilitamos este comportamiento con el siguiente comando:
 
     sudo systemctl disable nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2017.png)
+
 Para volver a habilitar el servicio de modo que se cargue en el inicio, escribimos el comando:
 
     sudo systemctl enable nginx
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2018.png)
 
 Ya hemos aprendido los comandos de administración básicos y debería estar listo para configurar el sitio para alojar más de un dominio.
 
