@@ -296,6 +296,8 @@ A continuación, comprobamos que no haya errores de sintaxis en ninguno de los a
 Y si no hay problemas, reiniciamos Nginx para habilitar los cambios. Con el comando:
 
     sudo systemctl restart nginx
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2029.png)
 
 Con esto realizado, debería proporcionar el nombre de dominio. Podemos probarlo visitando ahttp://your_domain
 
