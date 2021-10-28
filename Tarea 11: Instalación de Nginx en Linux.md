@@ -29,7 +29,7 @@ Ahora con esto listo, podemos instalar Nginx, con el siguiente comando:
 
 Tras haber aceptado todo el procedimiento, se instalará Nginx y cualquier dependencia necesaria en nuestra máquina virtual.
 
-  ### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+  ### 2. APLICAR LOS AJUSTES DE FIREWALL
 
 Antes de probar Nginx, se debe ajustar y aplicar el software de firewall para permitir el acceso al servicio. Nginx registra de forma automática un servicio con ufw tras la instalación, por lo que lo hace más sencillo permitir el acceso.
 
@@ -75,7 +75,7 @@ Y el resultado indicará el tráfico de HTTP que se permite:
             OpenSSH (v6)                   ALLOW               Anywhere (v6)             
             Nginx HTTP (v6)                ALLOW               Anywhere (v6)
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+### 3. COMPROBACIÓN DEL SERVIDOR WEB
 
 Al final del proceso de instalación, Ubuntu iniciará Nginx. El servidor debería estar activo.
 
@@ -116,7 +116,7 @@ Y debería de mostrarse que se ejecute correctamente Nginx.
 
 Si está en la página, el servidor se está ejecutando correctamente y está listo para ser administrado.
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+### 4. ADMINISTRAR EL PROCESO DE NGINX
 
 Ahora que el servidor está listo, revisamos algunos de los comandos básicos de la administración.
 
@@ -146,7 +146,7 @@ Para volver a habilitar el servicio de modo que se cargue en el inicio, escribim
 
 Ya hemos aprendido los comandos de administración básicos y debería estar listo para configurar el sitio para alojar más de un dominio.
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+### 3. CREANDO NUESTRO SERVICIO RESTFUL API
 
 Al emplear el servidor web Nginx, se pueden utilizar bloques del servidor (similares a hosts virtuales de Apache) para encapsular los detalles de la configuración y alojar más de un dominio desde un único servidor. Configuraremos un dominio llamado your_domain (siendo your_domain el nombre de tu dominio o el que queramos).
 
@@ -241,7 +241,7 @@ Y si no hay problemas, reiniciamos Nginx para habilitar los cambios. Con el coma
 
 Con esto realizado, debería proporcionar el nombre de dominio. Podemos probarlo visitando ahttp://your_domain
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+### 2. FAMILIARIZACIÓN CON LOS ARCHIVOS Y DIRECTIVOS IMPORTANTES DE NGINX
 
 /var/www/html: Contenido web real, que por defecto solo consta de la página predeterminada de Nginx.
 
