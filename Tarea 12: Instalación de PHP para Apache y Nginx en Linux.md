@@ -53,7 +53,7 @@ También se incluye otras dependencias de PHP: para consola, o PHP CLI, con el q
 
     php -v
 
-  ### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+  ### 2. PROBAR PHP EN UBUNTU
 
 Para probar PHP en Ubuntu, crearemos un pequeño archivo accesible vía web. Para ello, utilizaremos el comando:
 
