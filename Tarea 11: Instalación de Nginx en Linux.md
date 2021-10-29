@@ -22,14 +22,18 @@ Como Nginx debe de estar disponible en los repositorios predeterminados de Ubunt
 Utilizaremos el siguiente comando para tener el listado de los paquetes más recientes:
 
     sudo apt update
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%201.png)
 
 Ahora con esto listo, podemos instalar Nginx, con el siguiente comando:
 
     sudo apt install nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%202.png)
+
 Tras haber aceptado todo el procedimiento, se instalará Nginx y cualquier dependencia necesaria en nuestra máquina virtual.
 
-  ### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+  ### 2. APLICAR LOS AJUSTES DE FIREWALL
 
 Antes de probar Nginx, se debe ajustar y aplicar el software de firewall para permitir el acceso al servicio. Nginx registra de forma automática un servicio con ufw tras la instalación, por lo que lo hace más sencillo permitir el acceso.
 
@@ -46,6 +50,8 @@ Y nos debería obtener un listado de los perfiles de la aplicación con el coman
       Nginx HTTPS
       OpenSSH
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%203.png)
+
 Y hay 3 perfiles para Nginx:
 
 Nginx Full: Este perfil abre el puerto 80 (tráfico web normal, no cifrado), y el puerto 443 (puerto TLS/SSL cifrado.
@@ -59,6 +65,9 @@ Se recomienda habilitar el perfil del puerto más restrictivo. En este momento, 
 Se puede habilitar con el comando:
 
     sudo ufw allow 'Nginx HTTP'
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%204.png)
+
 
 Se puede verificar el cambio con el comando:
 
@@ -75,7 +84,10 @@ Y el resultado indicará el tráfico de HTTP que se permite:
             OpenSSH (v6)                   ALLOW               Anywhere (v6)             
             Nginx HTTP (v6)                ALLOW               Anywhere (v6)
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%205.png)
+
+
+### 3. COMPROBACIÓN DEL SERVIDOR WEB
 
 Al final del proceso de instalación, Ubuntu iniciará Nginx. El servidor debería estar activo.
 
@@ -96,6 +108,14 @@ Con la siguiente salida:
                 ├─2369 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
                 └─2380 nginx: worker process
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%206.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%207.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%208.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%209.png)
+
 Como nos confirma esto, el servicio se inició correctamente. Sin embargo, la mejor forma de comprobarlo es solicitando una página de Nginx.
 
 En el caso de no salir activo, debe existir un problema de puertos, concretamente el puerto 80 debe de estar ocupado por otro servicio.
@@ -107,46 +127,64 @@ Puede acceder a la página de aterrizaje predeterminada de Nginx para confirmar 
 Para ello, ejecutamos el siguiente comando:
 
     curl -4 icanhazip.com
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2010.png)
 
 Cuando se tengo la dirección IP del servidor, introdúcela en la barra de direcciones del navegador:
 
     http://your_server_ip:puerto
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2011.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2012.png)
+
 Y debería de mostrarse que se ejecute correctamente Nginx.
 
 Si está en la página, el servidor se está ejecutando correctamente y está listo para ser administrado.
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+### 4. ADMINISTRAR EL PROCESO DE NGINX
 
 Ahora que el servidor está listo, revisamos algunos de los comandos básicos de la administración.
 
 Para detener el servidor web, escribimos el comando:
 
     sudo systemctl stop nginx
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2013.png)
+
 
 Para iniciar el servidor web cuando no esté activo, escribimos el comando:
 
     sudo systemctl start nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2014.png)
+
 Para detener y luego iniciar de nuevo servicio, escribimos el comando:
 
     sudo systemctl restart nginx
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2015.png)
+
 
 Si solo está realizando los cambios en la configuración, Nginx a menudo puede volver a cargarse sin perder las conexiones. Escribimos el comando:
 
     sudo systemctl reload nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2016.png)
+
 De forma predeterminada, Nginx está configurado para iniciarse automáticamente cuando lo haga el servidor. Si no es lo que quiere, deshabilitamos este comportamiento con el siguiente comando:
 
     sudo systemctl disable nginx
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2017.png)
 
 Para volver a habilitar el servicio de modo que se cargue en el inicio, escribimos el comando:
 
     sudo systemctl enable nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2018.png)
+
 Ya hemos aprendido los comandos de administración básicos y debería estar listo para configurar el sitio para alojar más de un dominio.
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+### 5. CONFIGURAR LOS BLOQUES DEL SERVIDOR (RECOMENDADO)
 
 Al emplear el servidor web Nginx, se pueden utilizar bloques del servidor (similares a hosts virtuales de Apache) para encapsular los detalles de la configuración y alojar más de un dominio desde un único servidor. Configuraremos un dominio llamado your_domain (siendo your_domain el nombre de tu dominio o el que queramos).
 
@@ -156,13 +194,19 @@ Entonces, vamos a crear un directorio para your_domain, usando -p para crear cua
 
     sudo mkdir -p /var/www/your_domain/html
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2019.png)
+
 A continuación, asignamos la propiedad del directorio con la variable de entorno $USER con el comando:
 
     sudo chown -R $USER:$USER /var/www/your_domain/html
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2020.png)
+
 Los permisos del root deberían ser correctos si no se modifica el valor umask, que establece los permisos de archivos predeterminados. Para asegurarse de que los permisos sean correctos y permitir al propietario leer, escribir y ejecutar los archivos, y a la vez conceder sólo los permisos de lectura y ejecución a los grupos y terceros, pueden ingresar con el siguiente comando:
 
     sudo chmod -R 755 /var/www/your_domain
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2021.png)
 
 A continuación, crea una página de ejemplo index.html utilizando nano:
 
@@ -179,6 +223,10 @@ Dentro del html, agregamos el siguiente código html:
             </h1>
         </body>
     </html>
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2022.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2023.png)
 
 Para que Nginx presente el contenido, es necesario crear un bloque de servidor con las directivas correctas. En vez de modificar el archivo de configuración predeterminado directamente, se crea un nuevo en /etc/nginx/sites-available/your_domain:
 
@@ -199,12 +247,17 @@ Y pegarlo en el siguiente bloque de configuración, similar al predeterminado, p
                   try_files $uri $uri/ =404;
             }
           }
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2024.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2025.png)
 
 Hay que realizar este procedimiento sobre un puerto que tengamos disponible, en mi caso, el puerto 8086.
 
 A continuación, habilitaremos el archivo creando un enlace entre éste y el dominio sites-enabled, en el cual Nginx obtiene las lecturas durante el inicio:
 
     sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2026.png)
+
 
 Ahora contamos con los dos bloques de servidor habilitados y configurados para responder las solicitudes conforme a las directivas listen y server_name:
 
@@ -229,6 +282,11 @@ Y buscamos server_names_hash_bucket_size:
       }
     …
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2027.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2028.png)
+
+
 Guardamos el archivo y lo cerramos.
 
 A continuación, comprobamos que no haya errores de sintaxis en ninguno de los archivos de Nginx. Con el comando:
@@ -238,10 +296,12 @@ A continuación, comprobamos que no haya errores de sintaxis en ninguno de los a
 Y si no hay problemas, reiniciamos Nginx para habilitar los cambios. Con el comando:
 
     sudo systemctl restart nginx
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2011%20-%20Instalaci%C3%B3n%20de%20Nginx%20en%20Linux/Nginx%2029.png)
 
 Con esto realizado, debería proporcionar el nombre de dominio. Podemos probarlo visitando ahttp://your_domain
 
-### 2. CREANDO NUESTRO SERVICIO RESTFUL API
+### 6. FAMILIARIZACIÓN CON LOS ARCHIVOS Y DIRECTIVOS IMPORTANTES DE NGINX
 
 /var/www/html: Contenido web real, que por defecto solo consta de la página predeterminada de Nginx.
 

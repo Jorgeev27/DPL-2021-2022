@@ -12,3 +12,8 @@ Desarrollo de Aplicaciones Web - DAW
 - Tarea 4: Instalación de GitLab en linux
 - Tarea 5: Instalación de Apache en Linux
 - Tarea 6: Instalación de Apache-Tomcat en Linux
+- Tarea 7: Despliegue de WAR en Apache-Tomcat
+- Tarea 8: Despliegue de un Servicio REST en Apache-Tomcat
+- Tarea 9: Instalación de JBoss-Wildfly en Linux
+- Tarea 10: Instalación de servicios en JBoss-Wildfly
+- Tarea 11: Instalación Nginx en Linux
