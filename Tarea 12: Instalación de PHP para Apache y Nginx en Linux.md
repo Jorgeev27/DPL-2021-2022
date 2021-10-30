@@ -11,18 +11,23 @@ Previamente, para instalar PHP debemos actualizar las listas de paquetes. Para e
 
     sudo apt update
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%201.png)
+
  ### 1. PHP PARA APACHE
 
 Si se usa Apache como servicio web, el paquete que se necesita será libapache2-mod-php. Para ello, utilizaremos este comando para instalar PHP:
 
     sudo apt install -y php
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%202.png)
 
   ### 2. PHP PARA NGINX
 
 Si se usa Nginx como servicio web, el paquete que se necesita será php-fpm. Para ello, utilizaremos este comando para instalar PHP:
 
     sudo apt install -y php-fpm
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%203.png)
 
 En este caso, se instala PHP como servicio independiente, el servicio php7.4-fpm.service o php7.4-fpm, que queda iniciado y habilitado para su arranque automático junto a Ubuntu.
 
@@ -45,13 +50,21 @@ Buscamos y activamos la sección location con la configuración adecuada, en est
                 }
     ...
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%204.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%205.png)
+
 Y recargamos la configuración de Nginx:
 
     sudo systemctl reload nginx
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%206.png)
+
 También se incluye otras dependencias de PHP: para consola, o PHP CLI, con el que se puede comprobar en cualquier momento la versión que se tiene instalada en nuestro Ubuntu, usando el comando:
 
     php -v
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%207.png)
 
   ### 3. PROBAR PHP EN UBUNTU
 
@@ -61,8 +74,23 @@ Para probar PHP en Ubuntu, crearemos un pequeño archivo accesible vía web. Par
 
 Y el contenido será únicamente esta línea:
 
-    <?php phpinfo();
+    <?php 
+        phpinfo(); 
+    ?>
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%208.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%209.png)
 
 Y desde el navegador accederemos utilizando la dirección IP o dominio del servidor Ubuntu, añadiendo la ruta /info.php.
 
 Habrá que llevar la misma configuración a los subdominios que se hayan creado anteriormente en otras tareas.
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%2010.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%2011.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2012%20-%20Instalaci%C3%B3n%20de%20PHP%20en%20Linux/PHP%2012.png)
+
+Profe, he intentado la manera de arreglar el error de que no me sale la página de info.php
+pero no he encontrado resultado.
