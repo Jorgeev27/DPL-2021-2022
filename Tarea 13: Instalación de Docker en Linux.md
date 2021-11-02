@@ -14,22 +14,32 @@ Posiblemente, no se tenga la versión más reciente de Docker hasta la fecha. Pa
 Primeramente, actualizamos la lista de paquetes. Para ello, utilizaremos el comando:
 
     sudo apt update
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%201.png)
 
 A continuación, instalamos los paquetes de los requisitos previos que permiten a apt usar los paquetes a través de HTTPS. Para ello, utilizaremos el comando:
 
     sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%202.png)    
 
 Y añadimos la clave de GPG para el repositorio oficial de Docker en su sistema. Para ello, utilizaremos el comando:
 
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%203.png)
 
 Y agregamos el repositorio de Docker a las fuentes de APT:
 
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%204.png)
 
 Después de ello, actualizamos el paquete de base de datos con los paquetes de Docker del repositorio recién agregado:
 
     sudo apt update
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%205.png)
 
 Hay que asegurarse que estamos haciendo los pasos correctamente para realizar la instalación desde el repositorio de Docker en el lugar del repositorio predeterminado de Ubuntu:
 
@@ -43,9 +53,13 @@ Y se verá el número de la versión de Docker distinto:
          5:19.03.9~3-0~ubuntu-focal 500
          500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%206.png)
+
 Para finalizar, instalamos Docker con el comando:
 
     sudo apt install docker-ce
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%207.png)
 
 Con Docker instalado, el dominio de éste se iniciará y el proceso se habilitará para ejecutarse en el inicio. Para ver si funciona, ejecutamos el comando:
 
@@ -64,6 +78,7 @@ Y el resultado es el siguiente:
          CGroup: /system.slice/docker.service
                  └─3169 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/cont>
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%208.png)
 
   ### 2. TRABAJAR CON IMÁGENES DE DOCKER
 
@@ -85,6 +100,8 @@ Y el resultado será el siguiente:
     4. The Docker daemon streamed that output to the Docker client, which sent it
     to your terminal.
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%209.png)
+
 Aquí en este punto me surgió un problema y es que no podía crearlo porque no tenía los permisos. Lo solventé dándole permisos, con el comando:
 
     sudo chmod 666 /var/run/docker.sock
@@ -101,6 +118,8 @@ Y el resultado es el siguiente:
 
     CONTAINER ID        IMAGE               COMMAND             CREATED
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%2010.png)
+
 Para ver todos los contenedores activos e inactivos, utilizaremos el comando:
 
     sudo docker ps -a
@@ -109,6 +128,8 @@ Y resultado es el siguiente:
 
     CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
     b2c5683bc38f   hello-world   "/hello"   14 minutes ago   Exited (0) 14 minutes ago             kind_curran
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%2011.png)
 
 Para ver el último contenedor creado, utilizaremos el comando:
 
@@ -119,6 +140,8 @@ Y el resultado es el siguiente:
     CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
     b2c5683bc38f   hello-world   "/hello"   24 minutes ago   Exited (0) 23 minutes ago             kind_curran
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%2012.png)
+
 Si queremos listar las imágenes de Docker de nuevo, se nos mostrará la nueva imagen, así como la anterior que derivamos. Para ello, utilizaremos el comando:
 
     sudo docker images
@@ -127,3 +150,5 @@ Y el resultado es el siguiente:
 
     REPOSITORY    TAG       IMAGE ID       CREATED       SIZE
     hello-world   latest    feb5d9fea6a5   5 weeks ago   13.3kB
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2013%20-%20Instalaci%C3%B3n%20de%20Docker%20en%20Linux/Docker%2013.png)
