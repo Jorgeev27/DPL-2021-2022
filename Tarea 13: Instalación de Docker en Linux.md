@@ -1,4 +1,4 @@
-# Tarea 12: Instalación de PHP para Apache y Nginx en Linux
+# Tarea 13: Instalación de PHP para Apache y Nginx en Linux
 
   ## Jorge Escobar Viñuales
 
