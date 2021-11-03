@@ -17,3 +17,6 @@ Desarrollo de Aplicaciones Web - DAW
 - Tarea 9: Instalación de JBoss-Wildfly en Linux
 - Tarea 10: Instalación de servicios en JBoss-Wildfly
 - Tarea 11: Instalación Nginx en Linux
+- Tarea 12: Instalación de PHP para Apache y Nginx en Linux
+- Tarea 13: Instalación de Docker en Linux
+- Tarea 14: Instalación de Wildfly en Docker
