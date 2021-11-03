@@ -1,4 +1,4 @@
-# Tarea 13: Instalación de PHP para Apache y Nginx en Linux
+# Tarea 13: Instalación de Docker en Linux
 
   ## Jorge Escobar Viñuales
 
