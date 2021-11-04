@@ -57,7 +57,7 @@ Y nos muestra la siguiente salida que indica que se ha construido correctamente:
 
     sha256:56d2170193f556698a65abda6722ba29e877ee52b5df6b35ff3f1048d74ee381
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%204png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%204.png)
 
 Después, se verifica si existe la imagen dentro de docker. Para ello, utilizamos el comando:
 
@@ -70,7 +70,7 @@ Con la siguiente salida:
 
 Y voila, primera imagen en Docker!!.
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%205png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%205.png)
 
   ### 2. USO DE LA NUEVA IMAGEN
 
@@ -82,7 +82,7 @@ Teniendo en cuenta que el parámetro --name servidor-wildfly-config que indica e
 
     f02cdd6962b18134ba34e6ba03331a65526c30fdcf3d961ac8d4817b7f0007e5
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%206png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%206.png)
 
 Una vez realizado la acción, se debe de ejecutar la sentencia que verifica que el contenedor está arrancado:
 
@@ -90,10 +90,10 @@ Una vez realizado la acción, se debe de ejecutar la sentencia que verifica que 
 
 Y accedemos a la consola de Wildfly, para verificar que se puede entrar a la consola de administración con el usuario admin.
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%207png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%207.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%208png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%208.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%209png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%209.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%2010png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2015%20-%20Dockerizar%20Wildfly/Dockerizar%20Wildfly%2010.png)
