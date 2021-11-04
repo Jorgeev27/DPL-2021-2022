@@ -22,6 +22,8 @@ Y el resultado es el siguiente:
     Digest: sha256:35320abafdec6d360559b411aff466514d5741c3c527221445f48246350fdfe5
     Status: Downloaded newer image for jboss/wildfly:25.0.0.Final
     docker.io/jboss/wildfly:25.0.0.Final
+    
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2014%20-%20Instalaci%C3%B3n%20de%20Wildfly%20en%20Docker/Wildfly%20Docker%201.png)
 
 Ahora toca ver el listado de las imágenes descargadas con el comando:
 
@@ -32,6 +34,8 @@ Y el resultado es el siguiente:
     REPOSITORY      TAG            IMAGE ID       CREATED       SIZE
     jboss/wildfly   25.0.0.Final   856694040847   3 weeks ago   736MB
     hello-world     latest         feb5d9fea6a5   5 weeks ago   13.3kB
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2014%20-%20Instalaci%C3%B3n%20de%20Wildfly%20en%20Docker/Wildfly%20Docker%202.png)
 
 Ahora, arrancamos un contenedor con esa imagen y comprobamos qué tenemos disponible en el servidor de aplicaciones. Para ello, utilizaremos el comando:
 
@@ -44,6 +48,8 @@ Y el resultado es:
     Digest: sha256:35320abafdec6d360559b411aff466514d5741c3c527221445f48246350fdfe5
     Status: Downloaded newer image for jboss/wildfly:latest
     c1bdc66aa180bda8936fb538b95faf8d18f3aec2aa97ca5da0bcd5e5f87412b6
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2014%20-%20Instalaci%C3%B3n%20de%20Wildfly%20en%20Docker/Wildfly%20Docker%203.png)
 
 Y realizando el comando:
 
@@ -58,4 +64,8 @@ Para comprobar la dirección IP 172.17.0.1:
       inet6 fe80::42:1eff:fee0:9b4a/64 scope link
          valid_lft forever preferred_lft forever
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2014%20-%20Instalaci%C3%B3n%20de%20Wildfly%20en%20Docker/Wildfly%20Docker%204.png)
+
 De este modo, si se accede a 172.17.0.1:5000 veremos la instalación de Wildfly.
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2014%20-%20Instalaci%C3%B3n%20de%20Wildfly%20en%20Docker/Wildfly%20Docker%205.png)
