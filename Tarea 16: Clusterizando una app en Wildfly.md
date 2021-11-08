@@ -126,18 +126,16 @@ Para crear el cluster de 2 nodos ejecutamos la sentencia:
 
 Tras una espera de unos segundos, se tiene desplegada la aplicación en los puertos 8080 y 8081.
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildfly%2011.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildlfy%2011.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildfly%2012.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildlfy%2012.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildfly%2013.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildlfy%2013.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildfly%2014.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildlfy%2014.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildfly%2015.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildlfy%2015.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildfly%2016.png)
-
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildfly%2017.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2016%20-%20Clusterizando%20una%20app%20en%20Wildfly/Cluster%20Wildlfy%2016.png)
 
 Me da error 404.
