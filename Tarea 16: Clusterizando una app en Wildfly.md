@@ -5,6 +5,23 @@
   ## Indice:
  - Desplegando un cluster de Jboss con Docker
 
+Antes de ello, procedemos a instalar Docker Compose. Añadiremos el comando:
+
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-composeusr/local/bin/docker-compose
+
+Cambiamos los permisos:
+
+    sudo chmod +x /usr/local/bin/docker-compose
+
+Y creamos un enlace simbólico:
+
+    sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compos
+
+Comprobamos la versión instalada:
+
+    docker-compose --version
+
+
  ### 1. DESPLEGANDO UN CLUSTER DE JBOSS CON DOCKER
 
 Cogemos el proyecto de la app de Java, donde hay que realizar los siguientes cambios:
