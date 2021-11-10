@@ -9,6 +9,9 @@
 
 La estructura del proyecto tiene que ser similar a la que se nos muestra:
 
+<img align="center" src="https://raw.githubusercontent.com/jpexposito/docencia/master/img/lamp-estructura-docker.png">
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%209.png)
 
 Después de crear esta estructura, procedemos a instalar PHP en la versión 8.0.0 de Apache.
 
