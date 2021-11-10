@@ -13,9 +13,9 @@ Una vez realizado las tareas anteriores, vamos a construir y desplegar una app, 
 
 Los requerimientos de la tarea es:
 
-  - El uso de la imagen de Docker de WILDFLY, que vimos en la instalación de Wildfly en Docker.
+  - Uso de la imagen de Docker de WILDFLY, que vimos en la instalación de Wildfly en Docker.
   - Cluster de 3 nodos de WILDFLY, de forma similar a Cluster Wildfly.
-  - Instalación de la BBDD y phpmyadmin, de forma similar a Cluster Wildfly.
+  - Instalación de la BBDD y phpmyadmin, de forma similar a instalando LAMP en Docker.
   - Uso de Docker Compose, para especificar las necesidades de nuestro entorno.
 
  ### 2. APLICACIÓN A DESPLEGAR
