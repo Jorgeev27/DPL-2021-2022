@@ -9,6 +9,9 @@
 
 La estructura del proyecto tiene que ser similar a la que se nos muestra:
 
+<img align="center" src="https://raw.githubusercontent.com/jpexposito/docencia/master/img/lamp-estructura-docker.png">
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%209.png)
 
 Después de crear esta estructura, procedemos a instalar PHP en la versión 8.0.0 de Apache.
 
@@ -24,6 +27,10 @@ Lo pondremos en el documento Dockerfile:
           && docker-php-ext-install zip
 
     RUN a2enmod rewrite
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%201.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%202.png)
 
 Después de ello, vamos a la configuración de Docker Compose. Y aquí encontramos 3 grandes bloques: www, db y phpmyadmin:
 
@@ -67,6 +74,10 @@ Después de ello, vamos a la configuración de Docker Compose. Y aquí encontram
           MYSQL_ROOT_PASSWORD: test
           volumes:
           persistent:
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%203.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%204.png)
 
 Los contenedores actúan como servicios. En esta configuración son 3:
 
@@ -169,6 +180,10 @@ Este es el .sql que se importa a MYSQL.
                    /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
                    /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%205.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%206.png)
+
 Y posteriormente, el código PHP ubicado en www/index.php:
 
     <html>
@@ -208,13 +223,21 @@ Y posteriormente, el código PHP ubicado en www/index.php:
           </body>
     </html>
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%207.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%208.png)
+
 Para lanzar la configuración, ejecutamos el comando:
 
     sudo docker-compose up-d
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%2010.png)
+
 Para verificar los contenedores corriendo desde Docker Compose se ejecutan con el comando:
 
     sudo docker-compose ps
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%2011.png)
 
 Ahora, probamos con el navegador y escribimos 127.0.0.1 para comprobar si se ha abierto correctamente. También podemos ir a 127.0.0.1:8000 para llegar al contenedor de phpmyadmin. De ahí, nos pedirá el usuario y contraseña:
 
@@ -228,3 +251,11 @@ También, podemos verificar si está arrancado haciendo 127.0.0.1/index.php.
 Y para parar Docker Compose, ejecutamos:
 
     docker-compose stop
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%2012.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%2013.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%2014.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2017%20-%20Instalando%20LAMP%20en%20Docker/Lamp%20Docker%2015.png)
