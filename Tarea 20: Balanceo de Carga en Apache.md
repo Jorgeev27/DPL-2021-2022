@@ -91,6 +91,6 @@ Ahora, comprobamos si los siguientes parámetros que hemos puesto funcionan a la
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2013.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%204.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2014.png)
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2015.png)
