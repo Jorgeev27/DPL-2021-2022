@@ -94,3 +94,15 @@ Ahora, comprobamos si los siguientes parámetros que hemos puesto funcionan a la
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2014.png)
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2015.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2016.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2017.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2018.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2019.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2020.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2020%20-%20Balanceo%20de%20Carga%20en%20Apache/Balanceo%20Cargas%2021.png)
