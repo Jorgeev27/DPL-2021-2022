@@ -126,4 +126,5 @@ Y el archivo users.conf:
     goudan:abc:1002:100
     erzhu:xyz:1003:100
 
-Donde usuario:contraseña:uid:gid - Nombre de usuario:Contraseña:ID de usuario: ID de grupo.
+donde 
+- usuario:contraseña:uid:gid - Nombre de usuario:Contraseña:ID de usuario: ID de grupo.
