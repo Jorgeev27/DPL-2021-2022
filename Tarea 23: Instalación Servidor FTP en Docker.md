@@ -55,10 +55,10 @@ Utilizamos la imagen desarrollada por atmoz sobre sftp. Y realizamos los siguien
 
 donde:
 
-- name: Nombre del contenedor mysftp.
-- admin:admin:::upload: foo es el nombre de usuario, pass contraseña, upload es el archivo cargado donde se guardará en /home/foo/upload en el contenedor.
-- -p 22:22: asigna el puerto 22 del host al puerto 22 del contenedor, y que el puerto 22 del host de ubicación se reenviará al puerto 22 del contenedor.
-- -d atmoz/sftp: la imagen atmoz/sftp en el centro de acoplamiento para crear el contenedor.
+- name - Nombre del contenedor mysftp.
+- admin:admin:::upload - foo es el nombre de usuario, pass contraseña, upload es el archivo cargado donde se guardará en /home/foo/upload en el contenedor.
+- -p 22:22 - asigna el puerto 22 del host al puerto 22 del contenedor, y que el puerto 22 del host de ubicación se reenviará al puerto 22 del contenedor.
+- -d atmoz/sftp - la imagen atmoz/sftp en el centro de acoplamiento para crear el contenedor.
 
 
  ### 3. VERIFICAR LA IMAGEN
@@ -94,9 +94,9 @@ Para realizar la configuración del directorio /home de SFTP, ejecutamos el coma
 
 donde:
 
-- -v /host/upload:/home/admin/upload: El frente de los puntos es el directorio del host, y la parte posterior se monta en el directorio del contenedor, si el directorio local /host/upload no existe, se creará automáticamente.
-- --privileged=true: Se agregan privilegios de seguridad de selinux de linux al contenedor.
-- --name mysftp2: El nombre se cambiará debido a que no se puede repetir, el puerto sí se puede repetir aunque el contenedor no se va a iniciar.
+- -v /host/upload:/home/admin/upload - El frente de los puntos es el directorio del host, y la parte posterior se monta en el directorio del contenedor, si el directorio local /host/upload no existe, se creará automáticamente.
+- --privileged=true - Se agregan privilegios de seguridad de selinux de linux al contenedor.
+- --name mysftp2 - El nombre se cambiará debido a que no se puede repetir, el puerto sí se puede repetir aunque el contenedor no se va a iniciar.
 
 
  ### 5. SFTP MULTIUSUARIO
@@ -113,8 +113,8 @@ El segundo método es implementarlo, y para ello, utilizamos el comando:
 
 donde:
 
-- -v /host/users.conf:/etc/sftp/users.conf:ro: Se mapea el /host/users.conf local al /etc/sftp/users.conf del contenedor, y es de sólo lectura del contenedor.
-- -v /home/sftp:/home: Se asigna el directorio local /home/sftp al contenedor /home para almacenar los archivos cargados.
+- -v /host/users.conf:/etc/sftp/users.conf:ro - Se mapea el /host/users.conf local al /etc/sftp/users.conf del contenedor, y es de sólo lectura del contenedor.
+- -v /home/sftp:/home - Se asigna el directorio local /home/sftp al contenedor /home para almacenar los archivos cargados.
 
 Y no habrá que olvidar crear el archivo /host/users.conf en el directorio local.
 
