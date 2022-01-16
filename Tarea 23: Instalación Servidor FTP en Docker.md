@@ -46,6 +46,7 @@ Y con la siguiente salida en el comando:
     dazoe/sftp                simple sftp docker                              0                    
     triskellesolutions/sftp                                                   0           
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%201.png)
 
  ### 2. TRABAJANDO CON LA IMAGEN ATMOZ
 
@@ -55,11 +56,12 @@ Utilizamos la imagen desarrollada por atmoz sobre sftp. Y realizamos los siguien
 
 donde:
 
-- name: Nombre del contenedor mysftp.
-- admin:admin:::upload: foo es el nombre de usuario, pass contraseña, upload es el archivo cargado donde se guardará en /home/foo/upload en el contenedor.
-- -p 22:22: asigna el puerto 22 del host al puerto 22 del contenedor, y que el puerto 22 del host de ubicación se reenviará al puerto 22 del contenedor.
-- -d atmoz/sftp: la imagen atmoz/sftp en el centro de acoplamiento para crear el contenedor.
+- name - Nombre del contenedor mysftp.
+- admin:admin:::upload - foo es el nombre de usuario, pass contraseña, upload es el archivo cargado donde se guardará en /home/foo/upload en el contenedor.
+- -p 22:22 - asigna el puerto 22 del host al puerto 22 del contenedor, y que el puerto 22 del host de ubicación se reenviará al puerto 22 del contenedor.
+- -d atmoz/sftp - la imagen atmoz/sftp en el centro de acoplamiento para crear el contenedor.
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%202.png)
 
  ### 3. VERIFICAR LA IMAGEN
 
@@ -71,6 +73,8 @@ Y obtenemos el siguiente resultado:
 
     ffa078007f2e   atmoz/sftp   "/entrypoint admin:a…"   4 minutes ago   Up 4 minutes   0.0.0.0:2294->22/tcp   mysftp
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%203.png)
+
 Se puede realizar la prueba de acceso al servidor FTP. Para ello, lanzamos los comandos:
 
     sudo docker ps
@@ -80,11 +84,16 @@ Y obtenemos:
     CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS          PORTS                  NAMES
     ffa078007f2e   atmoz/sftp   "/entrypoint admin:a…"   13 minutes ago   Up 13 minutes   0.0.0.0:2294->22/tcp   mysftp
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%204.png)
+
     docker inspect ffa078007f2e | grep "IPAddress"
+    
+    
             "SecondaryIPAddresses": null,
              "IPAddress": "172.17.0.2",
                      "IPAddress": "172.17.0.2",
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%205.png)
 
  ### 4. CONFIGURAR EL DIRECTORIO /HOME EN LA MÁQUINA HOST
 
@@ -94,10 +103,11 @@ Para realizar la configuración del directorio /home de SFTP, ejecutamos el coma
 
 donde:
 
-- -v /host/upload:/home/admin/upload: El frente de los puntos es el directorio del host, y la parte posterior se monta en el directorio del contenedor, si el directorio local /host/upload no existe, se creará automáticamente.
-- --privileged=true: Se agregan privilegios de seguridad de selinux de linux al contenedor.
-- --name mysftp2: El nombre se cambiará debido a que no se puede repetir, el puerto sí se puede repetir aunque el contenedor no se va a iniciar.
+- -v /host/upload:/home/admin/upload - El frente de los puntos es el directorio del host, y la parte posterior se monta en el directorio del contenedor, si el directorio local /host/upload no existe, se creará automáticamente.
+- --privileged=true - Se agregan privilegios de seguridad de selinux de linux al contenedor.
+- --name mysftp2 - El nombre se cambiará debido a que no se puede repetir, el puerto sí se puede repetir aunque el contenedor no se va a iniciar.
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%206.png)
 
  ### 5. SFTP MULTIUSUARIO
 
@@ -113,8 +123,10 @@ El segundo método es implementarlo, y para ello, utilizamos el comando:
 
 donde:
 
-- -v /host/users.conf:/etc/sftp/users.conf:ro: Se mapea el /host/users.conf local al /etc/sftp/users.conf del contenedor, y es de sólo lectura del contenedor.
-- -v /home/sftp:/home: Se asigna el directorio local /home/sftp al contenedor /home para almacenar los archivos cargados.
+- -v /host/users.conf:/etc/sftp/users.conf:ro - Se mapea el /host/users.conf local al /etc/sftp/users.conf del contenedor, y es de sólo lectura del contenedor.
+- -v /home/sftp:/home - Se asigna el directorio local /home/sftp al contenedor /home para almacenar los archivos cargados.
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%207.png)
 
 Y no habrá que olvidar crear el archivo /host/users.conf en el directorio local.
 
@@ -126,4 +138,9 @@ Y el archivo users.conf:
     goudan:abc:1002:100
     erzhu:xyz:1003:100
 
-Donde usuario:contraseña:uid:gid - Nombre de usuario:Contraseña:ID de usuario: ID de grupo.
+donde 
+- usuario:contraseña:uid:gid - Nombre de usuario:Contraseña:ID de usuario: ID de grupo.
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%208.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2023%20-%20Instalaci%C3%B3n%20Servidor%20FTP%20en%20Docker/SFTP%209.png)

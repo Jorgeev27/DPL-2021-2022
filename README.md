@@ -20,3 +20,12 @@ Desarrollo de Aplicaciones Web - DAW
 - Tarea 12: Instalación de PHP para Apache y Nginx en Linux
 - Tarea 13: Instalación de Docker en Linux
 - Tarea 14: Instalación de Wildfly en Docker
+- Tarea 15: Dockerizando Docker
+- Tarea 16: Clusterizando una app en Wildfly
+- Tarea 17: Infraestructura LAMP en Docker
+- Tarea 18: Modificando y Clsuterizando un Servicio REST en Wildfly
+- Tarea 19: Desplegar una aplicación en Node.js en Docker
+- Tarea 20: Balanceo de Carga en Apache
+- Tarea 21: Balanceo de Carga en Nginx
+- Tarea 22: Instalación Servidor FTP en Ubuntu
+- Tarea 23: Instalación Servidor FTP en Docker
