@@ -43,6 +43,8 @@ Necesitamos resolver el problema de una construcción del servicio de una empres
  Una vez hecho esto, nos vamos al archivo jorgeevsystem.conf que está en /etc/apache2/sites-available/, y lo editamos para crear un Alias y así tener el subdominio.
 
  Ya con el Alias creado, reiniciamos Apache y nos dirigimos a nuestra página: www.jorgeevsystem.com/subdomain y ahí tendremos el archivo de info.php donde tendremos toda nuestra información acerca de PHP.
+ 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%203.png)
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%207.png)
 
