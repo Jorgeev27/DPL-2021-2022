@@ -22,6 +22,17 @@ Necesitamos resolver el problema de una construcción del servicio de una empres
 
  Con todos estos pasos, nuestro dominio principal estará funcionando correctamente.
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%201.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%202.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%204.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%205.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%206.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%208.png)
 
  ### 2. SUBDOMINIO CON INFO.PHP
 
@@ -33,6 +44,11 @@ Necesitamos resolver el problema de una construcción del servicio de una empres
 
  Ya con el Alias creado, reiniciamos Apache y nos dirigimos a nuestra página: www.jorgeevsystem.com/subdomain y ahí tendremos el archivo de info.php donde tendremos toda nuestra información acerca de PHP.
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%207.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%209.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%2010.png)
 
  ### 3. BASE DE DATOS - PHPMYADMIN
 
@@ -40,6 +56,11 @@ Necesitamos resolver el problema de una construcción del servicio de una empres
 
  Una vez realizado, creamos un directorio en la estructura del proyecto y se comprueba su funcionamiento. Iniciando sesión y veremos las bases de datos.
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%2011.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%2012.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2024%20-%20Construcci%C3%B3n%20de%20un%20Servicio%20de%20Empresa/DPL%20Empresa%2013.png)
 
  ### 4. SFTP
 
