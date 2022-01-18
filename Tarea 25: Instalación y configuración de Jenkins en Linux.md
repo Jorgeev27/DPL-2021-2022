@@ -1,4 +1,4 @@
-# Tarea 25 - Instalación y configuración de Jenkins en Linux
+# Tarea 25: Instalación y configuración de Jenkins en Linux
 
   ## Jorge Escobar Viñuales
 
