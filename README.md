@@ -29,3 +29,5 @@ Desarrollo de Aplicaciones Web - DAW
 - Tarea 21: Balanceo de Carga en Nginx
 - Tarea 22: Instalación Servidor FTP en Ubuntu
 - Tarea 23: Instalación Servidor FTP en Docker
+- Tarea 24: Construcción de un Servicio de Empresa
+- Tarea 25 - Instalación y configuración de Jenkins en Linux
