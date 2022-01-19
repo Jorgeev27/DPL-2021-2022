@@ -31,3 +31,4 @@ Desarrollo de Aplicaciones Web - DAW
 - Tarea 23: Instalación Servidor FTP en Docker
 - Tarea 24: Construcción de un Servicio de Empresa
 - Tarea 25: Instalación y configuración de Jenkins en Linux
+- Tarea 26: Instalación de Jenkins en Docker y Docker-Compose
