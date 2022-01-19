@@ -10,20 +10,45 @@
 
 Para esta ocasión, hacemos el mismo proceso de la actividad anterior (el dominio y su configuración):
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%201.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%202.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%203.png)
 
 Y una vez eso, nos descargamos la imagen de Jenkins para Docker, con el comando:
 
     docker pull jenkins/jenkins:lts
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%204.png)
+
 Y verificamos la imagen para saber si se ha descargado correctamente, con el comando:
 
     sudo docker images
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%205.png)
 
 Ahora ejecuta Jenkins como contenedor Docker poniéndolo en el puerto 8080, con el comando:
 
     docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins/jenkins:lts
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%206.png)
+
 Y ya tenemos Jenkins corriendo con Docker.
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%207.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%208.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%209.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2010.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2011.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2012.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2013.png)
 
  ### 2. INSTALACIÓN DE JENKINS EN DOCKER-COMPOSE
 
@@ -39,6 +64,8 @@ Dockerfile, conteniendo las instrucciones para construir la imagen:
     USER jenkins
     COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
     RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2014.png)
 
 En la línea 1, la imagen base. En la línea 4, instalamos Maven; indicando el usuario de ejecución es el root en la línea 3 y los nuevos usuarios de ejecución en la línea 6. En la línea 7, copiamos el fichero plugins.txt, y en la última línea se ejecuta el script install-plugins.sh que toma la lista de plugins del archivo plugins.txt y los instala en Jenkins.
 
@@ -113,6 +140,8 @@ Plugins.txt, incluyendo cada plugin que queremos que se instale en Jenkins:
     workflow-step-api
     workflow-support
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2015.png)
+
 Docker-compose.yml:
 
     version: '3'
@@ -131,18 +160,36 @@ Docker-compose.yml:
     volumes:
       jenkins_home:
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2016.png)
+
 En la línea 4 indicamos el directorio en la que se va a construir la imagen; un subdirectorio de donde se encuentra el fichero docker-compose.yml; en la línea 5 indicamos el nombre de la imagen, en este caso, la dejamos como está predeterminada (dpl/jenkins:latest); en la línea 6 reiniciamos el contenedor a menos que se detenga explícitamente o que Docker lo detenga o reinicie; en las líneas 9-10 indicamos el hostname del contenedor; en las líneas 12-13-14-15 definimos el volumen jenkins_home, que utiliza los cambios que realizamos en la configuración de Jenkins persista tras la destrucción del contenedor.
 
 Una vez realizado, procedemos a construir la imagen, con el comando:
 
     docker-compose build
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2017.png)
+
 Para arrancar el contenedor, utilizamos el comando:
 
     docker-compose up -d
 
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2018.png)
+
 Y ya con esto, tenemos la imagen creada. Así que accederemos nuestro dominio:8080 para entrar en la consola de administración de Jenkins.
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2019.png)
 
 Y si queremos ver la contraseña del usuario admin, utilizamos el comando:
 
     docker exec -it dockerjenkins_master_1 cat /var/jenkins_home/secrets/initialAdminPassword
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2020.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2021.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2022.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2023.png)
+
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2026%20-%20Instalaci%C3%B3n%20de%20Jenkins%20en%20Docker%20y%20Docker-Compose/Jenkins%20Docker%20Docker-Compose%2024.png)
