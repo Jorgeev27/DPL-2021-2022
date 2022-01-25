@@ -51,6 +51,6 @@ Y en último paso, ejecutamos:
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2029%20-%20Creaci%C3%B3n%20de%20los%20Pipeline%20en%20JAVA/Pipeline%20JAVA%209.png)
 
-![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2029%20-%20Creaci%C3%B3n%20de%20los%20Pipeline%20en%20JAVA/Pipeline%20JAVA%2010.png)
+![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2029%20-%20Creaci%C3%B3n%20de%20los%20Pipeline%20en%20JAVA/Pipelinr%20JAVA%2010.png)
 
 ![](https://github.com/Jorgeev27/GIT/blob/main/img/Tarea%2029%20-%20Creaci%C3%B3n%20de%20los%20Pipeline%20en%20JAVA/Pipeline%20JAVA%2011.png)
