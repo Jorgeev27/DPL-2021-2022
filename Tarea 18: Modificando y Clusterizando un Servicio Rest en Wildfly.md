@@ -3,37 +3,30 @@
   ## Jorge Escobar Viñuales
 
   ## Indice:
- - Introducción
- - Aplicación a desplegar
- - Aplicación a desplegar (Opcional)
+ - Creación del Servicio
 
- ### 1. INTRODUCCIÓN
+ ### 1. CREACIÓN DEL SERVICIO
 
-Una vez realizado las tareas anteriores, vamos a construir y desplegar una app, que requiere Wildfly, bajo una api REST y una BBDD.
+La estructura del proyecto será la siguiente:
 
-Los requerimientos de la tarea es:
+Y para empezar, creamos el fichero docker-compose.yml:
 
-  - Uso de la imagen de Docker de WILDFLY, que vimos en la instalación de Wildfly en Docker.
-  - Cluster de 3 nodos de WILDFLY, de forma similar a Cluster Wildfly.
-  - Instalación de la BBDD y phpmyadmin, de forma similar a instalando LAMP en Docker.
-  - Uso de Docker Compose, para especificar las necesidades de nuestro entorno.
+El siguiente paso, será crear el archivo Dockerfile:
 
- ### 2. APLICACIÓN A DESPLEGAR
+Una vez realizado, creamos el archivo data.sql:
 
-Vamos a utilizar la aplicación que se encuentra en los ejemplos de WIldfly; la aplicación helloworld-rs.
+Y, por último, creamos el archivo index.php:
 
-  ### 3. APLICACIÓN A DESPLEGAR (OPCIONAL)
+Ya realizado todos los archivos y con sus configuraciones, hacemos el siguiente comando:
 
-Se puede incluir el plugin de Jetty, en el proyecto "hola mundo" que utilizamos en anteriores tareas.
+    sudo docker-compose up -d
 
-Para verificar que todo funciona correctamente en el entorno local, utilizamos el comando:
+Tuve que volver a realizar el comando porque me daba error en la BBDD y como estaba predeterminado el puerto en 3306, tuve que cambio a 3310:
 
-    mvn clean jetty:run
+Ya con los cambios, se realiza la imagen perfecta.
 
-viendo la salida en el navegador:
+El siguiente paso será verificar si las imágenes de Wildfly están funcionando correctamente:
 
-    http://localhost:8082/{artifactld}/.
-    (SALIDA EN XML): http://localhost:8082/{artifactld}/rest/xml
-    (SALIDA EN JSON): http://localhost:8082/{artifactld}/rest/json
+Y comprobamos PHPMyAdmin:
 
-Además, habrá que construir un fichero Dockerfile y un fichero docker-compose.yml
+Y nos logueamos correctamente:
