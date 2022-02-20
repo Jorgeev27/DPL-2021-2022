@@ -32,3 +32,7 @@ Desarrollo de Aplicaciones Web - DAW
 - Tarea 24: Construcción de un Servicio de Empresa
 - Tarea 25: Instalación y configuración de Jenkins en Linux
 - Tarea 26: Instalación de Jenkins en Docker y Docker-Compose
+- Tarea 27: Creación de Pipeline en diferentes lenguajes
+- Tarea 28: Creación de los Pipeline en PHP
+- Tarea 29: Creación de Pipeline en Jenkins en Java y Apache-Tomcat
+- Tarea Examen 2ª Evaluación - Creación de Empresa con CI y DC
