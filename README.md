@@ -6,12 +6,11 @@ Desarrollo de Aplicaciones Web - DAW
 <img align="center" src="https://res.cloudinary.com/practicaldev/image/fetch/s--oohOOnY7--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/tsrakct789rm4hg087kh.jpg">
   
 ## Tareas:
-- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%202:%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git.md" target="_blank">Manipulación de repositorios en GIT</a>
-- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%203:%20Ejemplos%20en%20GIT_Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20GIT.md">Manipulación de repositorios en GIT</a>
-- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%202:%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git.md">Ejemplos en GIT_Manipulación Avanzada de repositorios en GIT</a>
-- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%204:%20Instalaci%C3%B3n%20de%20GitLab%20en%20linux.md">Instalación de GitLab en linux</a>
-- Tarea 4: Instalación de GitLab en linux
-- Tarea 5: Instalación de Apache en Linux
+- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%202:%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git.md">Tarea 2: Instalación de Git en linux</a>
+- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%203:%20Ejemplos%20en%20GIT_Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20GIT.md">Tarea 3 - Ejemplos de GIT: Manipulación Avanzada de repositorios en GIT</a>
+- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%204:%20Instalaci%C3%B3n%20de%20GitLab%20en%20linux.md">Tarea 4: Instalación de GitLab en Linux</a>
+- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%205:%20Instalaci%C3%B3n%20de%20Apache%20en%20Linux.md">Tarea 5: Instalación de Apache en Linux</a>
+- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%206:%20Instalaci%C3%B3n%20de%20Apache-Tomcat%20en%20Linux.md">Tarea 6: Instalación de Apache-Tomcat en Linux</a>
 - Tarea 6: Instalación de Apache-Tomcat en Linux
 - Tarea 7: Despliegue de WAR en Apache-Tomcat
 - Tarea 8: Despliegue de un Servicio REST en Apache-Tomcat
