@@ -7,6 +7,7 @@ Desarrollo de Aplicaciones Web - DAW
   
 ## Tareas:
 - Tarea 1: Instalación de GIT en local
+<a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%202:%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git.md">Manipulación de repositorios en GIT</a>
 - Tarea 2: Manipulación de repositorios en GIT
 - Tarea 3: Ejemplos en GIT_Manipulación Avanzada de repositorios en GIT
 - Tarea 4: Instalación de GitLab en linux
