@@ -6,7 +6,7 @@ Desarrollo de Aplicaciones Web - DAW
 <img align="center" src="https://res.cloudinary.com/practicaldev/image/fetch/s--oohOOnY7--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/tsrakct789rm4hg087kh.jpg">
   
 ## Tareas:
-- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%202:%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git.md">Manipulación de repositorios en GIT</a>
+- <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%202:%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git.md" target="_blank">Manipulación de repositorios en GIT</a>
 - <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%203:%20Ejemplos%20en%20GIT_Manipulaci%C3%B3n%20Avanzada%20de%20repositorios%20en%20GIT.md">Manipulación de repositorios en GIT</a>
 - <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%202:%20Manipulaci%C3%B3n%20de%20repositorios%20en%20Git.md">Ejemplos en GIT_Manipulación Avanzada de repositorios en GIT</a>
 - <a href="https://github.com/Jorgeev27/DPL-2021-2022/blob/main/Tarea%204:%20Instalaci%C3%B3n%20de%20GitLab%20en%20linux.md">Instalación de GitLab en linux</a>
